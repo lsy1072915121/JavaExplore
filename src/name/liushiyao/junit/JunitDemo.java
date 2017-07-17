@@ -20,7 +20,6 @@ public class JunitDemo {
 
                 TestCase.assertEquals ( StringUtils.addString ( "123","56" ),"123456" );
 
-
         }
 
         public static void main ( String[] args ) {

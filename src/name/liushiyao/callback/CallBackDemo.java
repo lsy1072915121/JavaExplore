@@ -25,6 +25,7 @@ public class CallBackDemo {
 
         public static void main ( String[] args ) {
 
+                //2017年7月17日15:56:17
                 MyEventSource myEventSource = new MyEventSource ();
                 myEventSource.setListener ( new MyListener ( ) {
                         @Override
