@@ -16,7 +16,7 @@ public class AnnotationDemo {
          */
         public static void main(String[] args) {
 
-                FruitInfoUtil.getFruitInfo(Apple.class);
+                PCUtil.getPCInfo (PC.class);
 
         }
 

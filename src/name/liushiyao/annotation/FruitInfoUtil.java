@@ -10,10 +10,14 @@ public class FruitInfoUtil {
         String strFruitName=" 水果名称：";
         String strFruitColor=" 水果颜色：";
         String strFruitProvicer="供应商信息：";
-        
+
+        //返回程序上所有的注解，如果没有则返回null
         Field[] fields = clazz.getDeclaredFields();
-        
+        /*
+        获取注解
+         */
         for(Field field :fields){
+            //判断是否存在指定类型的注解
             if(field.isAnnotationPresent(MyAnnotation.FruitName.class)){
                 MyAnnotation.FruitName fruitName = (MyAnnotation.FruitName ) field.getAnnotation(MyAnnotation.FruitName.class);
                 strFruitName=strFruitName+fruitName.value();
